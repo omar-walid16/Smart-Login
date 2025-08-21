@@ -1,0 +1,30 @@
+body
+{
+    background-color: #24353f ;
+    font-family: 'Titillium Web', sans-serif;
+}
+.main-section
+{
+    position: relative;
+    top: 10%;
+    box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1);
+;
+}
+#hInput
+{
+    color: #17a2b8;
+    font-size: 40px;
+
+}
+.home h1 a
+{
+    font-size: 40px;
+}
+.home
+{
+    background-color: #24353f;
+}
+.msg
+{
+    background-color: #24353f;
+}

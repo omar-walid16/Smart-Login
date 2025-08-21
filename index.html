@@ -1,0 +1,60 @@
+ <html >
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    
+    <body>
+        <section class="main-section w-50 mx-auto p-5 " id="main">
+            <h1 class="text-center pt-3" id="hInput">Smart Login System </h1>
+            <input type="text" id="nameInputField" placeholder="Enter your name" class="form-control bg-transparent my-3 text-white-50 d-none">
+            <div class="alert text-danger text-center d-none" id="nameAlert">Reqired Field</div> 
+            <input type="email" id="emailInputField" placeholder="Enter your email" class="form-control bg-transparent text-white-50 my-3">
+            <div class="alert text-danger text-center d-none" id="emailAlert">Reqired Field And Must Finish With ( .com )</div> 
+            <input type="password" id="passwordInputField" placeholder="Enter your password" class="form-control bg-transparent text-white-50">
+            <div class="alert text-danger text-center d-none" id="passAlert">Field Must Contain One Capital Letter And From 1 To 8 Small Letters And One special Character</div>
+            <div class="alert text-danger text-center d-none" id="requireAlert">Fields Are Required</div>            
+            <div class="alert text-danger text-center d-none" id="msgAlert">This Email Is Already Signed Up</div>
+            <button class="btn btn-outline-info w-100 p-2 my-3" id="loginBtn">Login</button>
+            <button class="btn btn-outline-info w-100 p-2 my-3 d-none" id="signupBtn">Sign Up</button>
+            
+            <p class="text-white text-center" id="signUpLink">Don’t have an account? <a href="#" class="text-white">SignUp</a></p>
+            <p class="text-white text-center d-none" id="signInLink">Do You have an account? <a href="#" class="text-white">SignIn</a></p>
+        </section>
+        <section class="home vh-100 position-relative d-none" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-lg">
+                <div class="container-fluid">
+                    <h1 class="ps-5"><a class="navbar-brand" href="#home">Smart Login</a></h1>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <button class="btn btn-outline-warning ms-auto me-5 my-btn" type="submit" id="logoutBtn">LogOut</button>
+                        </div>
+                </div>
+            </nav>
+            <div class="msg p-5 position-absolute top-50 start-50 translate-middle shadow-lg d-flex justify-content-center align-items-center w-50 mx-auto">
+                <h1>Welcome To Smart Login</h1>     
+            </div>
+        </section>
+        <script src="Js/main.js"></script>
+        <script src="Js/bootstrap.bundle.min.js"></script>
+    </body>
+</html> 
+
+<!-- if (localStorage.getItem('signinEmails') != null)
+{
+    
+}
+function signinInfo() {
+    loginBtn.classList.replace('d-none','d-block');
+    signUpLink.classList.replace('d-none','d-block')
+}
+function signupInfo() {
+    loginBtn.classList.add('d-none');
+    signupBtn.classList.replace('d-none','d-block');
+    nameInputField.classList.replace('d-none', 'd-block');
+    signUpLink.classList.replace('d-none','d-block')
+    signInLink.classList.add('d-none')
+} 
+signUpLink.addEventListener('click',signinInfo)
+signInLink.addEventListener('click',signupInfo)--!>
